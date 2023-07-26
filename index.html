@@ -9,40 +9,129 @@
     />
 
     <link rel="icon" href="devchallenges.png" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/global.css">
 
     <title>Checkout page</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <main>
+      <h1>Checkout</h1>
+      <div class="content">
+        <div class="receipt">
+          <div class="products">
+            <div class="card">
+              <img src="./images/photo1.png" alt="vintage backbag">
+              <div class="description">
+                <div>
+                  <p>Vintage Backbag</p>
+                  <div>
+                    <p>$54.99</p>
+                    <p>$94.99</p>
+                  </div>
+                </div>
+                <div>
+                  <button>-</button>
+                  <p>1</p>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/photo2.png" alt="vintage backbag">
+              <div class="description">
+                <div>
+                  <p>Vintage Backbag</p>
+                  <div>
+                    <p>$54.99</p>
+                    <p>$94.99</p>
+                  </div>
+                </div>
+                <div>
+                  <button>-</button>
+                  <p>1</p>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+            <div>
+              <p>Total</p>
+              <p>$148.98</p>
+            </div>
+          </div>
+        </div>
+        <form action="">
+          <div>
+            <h3>Contact infomation</h3>
+            <div>
+              <label for="email">E-mail</label>
+              <div>
+                <img src="" alt="">
+                <input type="text" id="email" placeholder="Enter your email...">
+              </div>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <div>
+                <img src="" alt="">
+                <input type="text" id="email" placeholder="Enter your phone...">
+              </div>
+            </div>
+          </div>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+          <div>
+            <h3>Shipping address</h3>
+            <div>
+              <label for="name">Full name</label>
+              <div>
+                <img src="" alt="">
+                <input type="text" id="name" placeholder="Your name...">
+              </div>
+            </div>
+            <div>
+              <label for="address">Address</label>
+              <div>
+                <img src="" alt="">
+                <input type="text" id="address" placeholder="Your address...">
+              </div>
+            </div>
+            <div>
+              <label for="city">City</label>
+              <div>
+                <img src="" alt="">
+                <input type="text" id="city" placeholder="Your city...">
+              </div>
+            </div>
+            <div>
+              <div>
+                <label for="country">Country</label>
+                <div>
+                  <img src="" alt="">
+                  <select id="country">
+                    <option value="">Your country...</option>
+                </div>
+              </div>
+              <div>
+                <label for="postal-code">Postal code</label>
+                <div>
+                  <img src="" alt="">
+                  <input type="text" id="postal-code" placeholder="Your postal code...">
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="save">
+              <label for="save">Save this information for next time</label>
+            </div>
+          </div>
+          <button>Continue</button>
+        </form>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+    </main>
   </body>
 </html>
