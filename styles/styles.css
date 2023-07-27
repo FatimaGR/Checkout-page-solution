@@ -1,12 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/* general styles and variables */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
 
+:root{
+  --gray-1: #333333;
+  --gray-2: #4F4F4F;
+  --gray-3: #828282;
+  --gray-4: #BDBDBD;
+  --gray-5: #4E5150;
+  --gray-6: #F2F2F2;
+}
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gray-1);
+  padding: 3% 20%;
+}
+h1{
+  font-size: 36px;
+  color: var(--gray-5);
 }
 .content{
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10%;
+}
+
+/* receipt styles */
+
+
+/* form styles */
+form label{
+  font-size: 12px;
+  color: var(--gray-2);
+}
+form .input{
+  padding: 10px;
+  border: 1px solid var(--gray-3);
+  border-radius: 12px;
+}
+input{
+  appearance: none;
 }
