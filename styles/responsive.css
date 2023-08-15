@@ -34,7 +34,7 @@
   form label{
     font-size: 10px;
   }
-  .input-text{
+  .input-text, .select-country{
     font-size: 12px;
   }
   .card .name{

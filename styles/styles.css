@@ -76,7 +76,7 @@ form .input{
 }
 .input-text{
   width: 80%;
-  background-color: none;
+  background: none;
   border: none;
   outline: none;
   font-size: 16px;
@@ -114,6 +114,15 @@ form .input{
 .sub{
   width: 50%;
   box-sizing: border-box;
+}
+.select-country{
+  border: none;
+  background: none;
+  color: var(--gray-3);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
 }
 form button{
   outline: none;
