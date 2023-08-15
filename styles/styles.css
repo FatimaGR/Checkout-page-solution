@@ -26,6 +26,7 @@ body {
 h1{
   font-size: 36px;
   color: var(--gray-5);
+  margin-bottom: 40px;
 }
 .content{
   width: 100%;
@@ -34,9 +35,6 @@ h1{
   justify-content: space-between;
   gap: 10%;
 }
-
-/* receipt styles */
-
 
 /* form styles */
 form{
@@ -62,6 +60,7 @@ form label{
   color: var(--gray-2);
 }
 form .input{
+  max-width: 100%;
   padding: 10px;
   border: 1px solid var(--gray-3);
   border-radius: 12px;
@@ -74,10 +73,6 @@ form .input{
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-.sub{
-  max-width: 50%;
-  box-sizing: border-box;
 }
 .input-text{
   width: 80%;
@@ -112,10 +107,18 @@ form .input{
   align-items: center;
   gap: 15px;
 }
+.sub-container-input{
+  width: 100%;
+  justify-content: space-between;
+}
+.sub{
+  width: 50%;
+  box-sizing: border-box;
+}
 form button{
   outline: none;
   background-color: var(--orange);
-  padding: 5% 12%;
+  padding: 17px 45px;
   color: var(--white);
   font-size: 16px;
   border: none;
@@ -131,6 +134,7 @@ form button{
 }
 .receipt{
   width: 100%;
+  max-width: 465px;
   height: fit-content;
   gap: 50px;
   padding: 30px;
@@ -141,6 +145,7 @@ form button{
 .card{
   width: 100%;
   display: flex;
+  justify-content: center;
   gap: 20px;
   margin-bottom: 30px;
 }
@@ -199,4 +204,19 @@ form button{
 }
 .receipt-price .price{
   font-size: 14px;
+}
+/* footer */
+footer p{
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--gray-4);
+}
+footer a{
+  font-weight: 700;
+  color: var(--gray-4);
+}
+footer a:hover{
+  color: var(--orange);
 }
