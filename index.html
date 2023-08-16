@@ -30,7 +30,7 @@
                 </div>
                 <div class="counter">
                   <button class="action">-</button>
-                  <p class="amount">1</p>
+                  <p class="amount" id="amount">1</p>
                   <button class="action">+</button>
                 </div>
               </div>
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-        <form action="">
+        <form action="./formCompleted.html" method="" id="form">
           <div class="contact-information">
             <h3>Contact infomation</h3>
             <div class="container-input">
@@ -73,8 +73,9 @@
                 <span class="material-symbols-outlined icon">
                   mail
                 </span>
-                <input type="text" id="email" class="input-text" placeholder="Enter your email...">
+                <input type="email" id="email" class="input-text" placeholder="Enter your email..." required>
               </div>
+              <p id="emailValidation" class="emailValidation"></p>
             </div>
             <div class="container-input">
               <label for="phone">Phone</label>
@@ -82,7 +83,7 @@
                 <span class="material-symbols-outlined icon">
                   call
                 </span>
-                <input type="text" id="phone" class="input-text" placeholder="Enter your phone...">
+                <input type="number" id="phone" class="input-text" placeholder="Enter your phone..." required>
               </div>
             </div>
           </div>
@@ -95,7 +96,7 @@
                 <span class="material-symbols-outlined icon">
                   account_circle
                 </span>
-                <input type="text" id="name" class="input-text" placeholder="Your name...">
+                <input type="text" id="name" class="input-text" placeholder="Your name..." required>
               </div>
             </div>
             <div class="container-input">
@@ -104,7 +105,7 @@
                 <span class="material-symbols-outlined icon">
                   home
                 </span>
-                <input type="text" id="address" class="input-text" placeholder="Your address...">
+                <input type="text" id="address" class="input-text" placeholder="Your address..." required>
               </div>
             </div>
             <div class="container-input">
@@ -113,7 +114,7 @@
                 <span class="material-symbols-outlined icon">
                   location_city
                 </span>
-                <input type="text" id="city" class="input-text" placeholder="Your city...">
+                <input type="text" id="city" class="input-text" placeholder="Your city..." required>
               </div>
             </div>
             <div class="sub-container-input">
@@ -123,7 +124,7 @@
                   <span class="material-symbols-outlined icon">
                     public
                   </span>
-                  <select id="country" class="select-country">
+                  <select id="country" class="select-country" required>
                     <option value="">Your country...</option>
                     <option value="United-States">United States</option>
                     <option value="Mexico">Mexico</option>
@@ -138,16 +139,17 @@
                   <span class="material-symbols-outlined icon">
                     markunread_mailbox
                   </span>
-                  <input type="text" id="postal-code" class="input-text" placeholder="Your postal code..">
+                  <input type="text" id="postal-code" class="input-text" placeholder="Your postal code.." required>
                 </div>
               </div>
             </div>
             <div class="container-checkbox">
-              <input type="checkbox" name="save" id="save" class="input-checkbox">
+              <input type="checkbox" name="save" id="save" class="input-checkbox" required>
               <label for="save">Save this information for next time</label>
             </div>
           </div>
-          <button>Continue</button>
+          <button type="submit">Continue</button>
+          <p class="warnings" id="warnings"></p>
         </form>
       </div>
     </main>
@@ -156,5 +158,7 @@
         <a href="https://devchallenges.io/portfolio/FatimaGR">FatimaGR</a> 
         - devChallenges.io</p>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
