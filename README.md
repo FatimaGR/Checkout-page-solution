@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://checkout-page-solution-fatimagr.vercel.app">
       Demo
     </a>
     <span> | </span>
@@ -33,12 +33,12 @@
 
 Create a checkout page following the design. You don’t need to use JS in this challenge but use correct input types and validation. Fulfill user stories below:
 
-- [✓] User story: I can see a page following the given design
-- [✓] User story: I can input email, phone, full name, address, city, country, and postal code
-- [✓] User story: I can input the number of items
-- [✓] User story: I can select at least 3 countries from the dropdown
-- [✓] User story: When I click submit button or press enter, I can see a warning if validation fails
-- [✓] User story: When I click submit button or press enter, I can see a successful alert if validation succeeds
+- [✓] I can see a page following the given design
+- [✓] I can input email, phone, full name, address, city, country, and postal code
+- [✓] I can input the number of items
+- [✓] I can select at least 3 countries from the dropdown
+- [✓] When I click submit button or press enter, I can see a warning if validation fails
+- [✓] When I click submit button or press enter, I can see a successful alert if validation succeeds
 ### Built With
 
 - HTML
