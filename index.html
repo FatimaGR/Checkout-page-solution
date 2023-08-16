@@ -24,14 +24,14 @@
                 <div>
                   <p class="name">Vintage Backbag</p>
                   <div class="price">
-                    <p class="final-price">$54.99</p>
+                    <p class="final-price" id="backbag-price">$54.99</p>
                     <p class="original-price">$94.99</p>
                   </div>
                 </div>
                 <div class="counter">
-                  <button class="action">-</button>
-                  <p class="amount" id="amount">1</p>
-                  <button class="action">+</button>
+                  <button class="action" id="backbag-rest">-</button>
+                  <p class="amount" id="backbag-amount">1</p>
+                  <button class="action" id="backbag-sum">+</button>
                 </div>
               </div>
             </div>
@@ -39,16 +39,16 @@
               <img src="./images/photo2.png" alt="vintage backbag">
               <div class="description">
                 <div>
-                  <p class="name">Vintage Backbag</p>
+                  <p class="name">Levi Shoes</p>
                   <div class="price">
-                    <p class="final-price">$54.99</p>
-                    <p class="original-price">$94.99</p>
+                    <p class="final-price" id="shoes-price">$74.99</p>
+                    <p class="original-price">$124.99</p>
                   </div>
                 </div>
                 <div class="counter">
-                  <button class="action">-</button>
-                  <p class="amount">1</p>
-                  <button class="action">+</button>
+                  <button class="action" id="shoes-rest">-</button>
+                  <p class="amount" id="shoes-amount">1</p>
+                  <button class="action" id="shoes-sum">+</button>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@
                 <span class="material-symbols-outlined icon">
                   call
                 </span>
-                <input type="number" id="phone" class="input-text" placeholder="Enter your phone..." required>
+                <input type="tel" id="phone" class="input-text" placeholder="Enter your phone..." required>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@
                     public
                   </span>
                   <select id="country" class="select-country" required>
-                    <option value="">Your country...</option>
+                    <option value="" selected disabled>Your country...</option>
                     <option value="United-States">United States</option>
                     <option value="Mexico">Mexico</option>
                     <option value="Peru">Peru</option>

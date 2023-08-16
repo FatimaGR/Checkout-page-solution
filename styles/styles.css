@@ -35,6 +35,14 @@ h1{
   justify-content: space-between;
   gap: 10%;
 }
+.form-completed{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
 /* form styles */
 form{
@@ -96,6 +104,7 @@ form .input{
   min-width: 21px;
   border: 1px solid var(--gray-3);
   border-radius: 4px;
+  cursor: pointer;
 }
 .input-checkbox:checked{
   background-color: var(--orange);
@@ -169,6 +178,9 @@ form button{
   color: var(--gray-5);
   font-size: 16px;
   margin-bottom: 8px;
+}
+.card .description{
+  width: 100%;
 }
 .card .price{
   display: flex;
